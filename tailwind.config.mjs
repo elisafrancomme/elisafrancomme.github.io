@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: { invited: ["YoureInvited"] },
       colors: {
+        pink: "#B76781",
         brand: {
           50: "#fbf7f5",
           100: "#f6edea",
@@ -39,6 +40,7 @@ export default {
             "--tw-prose-quotes": theme("colors.brand[950]"),
             "--tw-prose-quote-borders": theme("colors.brand[600]"),
             "--tw-prose-bullets": theme("colors.brand[600]"),
+            "--tw-prose-headings": theme("colors.pink"),
           },
         },
       }),
