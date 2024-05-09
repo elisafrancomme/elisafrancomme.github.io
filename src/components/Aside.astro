@@ -4,7 +4,7 @@ import IconPhone from "./IconPhone.astro";
 import IconCalendarDays from "./IconCalendarDays.astro";
 ---
 
-<aside class="flex flex-col gap-4 justify-center sticky top-24">
+<aside class="flex flex-col gap-4 mb-12 justify-center sticky top-0 md:top-24">
   <a
     href="https://www.resalib.fr/praticien/56645-elisa-francomme-kinesiologue-albi#newrdvmodal"
     class="flex items-center gap-2 bg-accent-400 text-white font-bold px-3 py-2 rounded hover:bg-accent-300"
@@ -13,11 +13,14 @@ import IconCalendarDays from "./IconCalendarDays.astro";
     <IconCalendarDays class="size-6" />
     Réserver une séance
   </a>
-  <div class="flex gap-2 items-center px-3 py-2" aria-label="Adresse">
+  <div class="hidden md:flex gap-2 items-center px-3 py-2" aria-label="Adresse">
     <IconPin class="size-6" />
     <p>11 avenue Albert Thomas<br />81000 Albi</p>
   </div>
-  <div class="flex items-center gap-2 px-3 py-2" aria-label="Téléphone">
+  <div
+    class="hidden md:flex items-center gap-2 px-3 py-2"
+    aria-label="Téléphone"
+  >
     <IconPhone class="size-6" />
     <p>06 33 55 22 99</p>
   </div>

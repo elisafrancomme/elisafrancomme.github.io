@@ -9,6 +9,7 @@ import "../styles/tailwind.css";
 import Header from "../components/Header.astro";
 import Navigation from "../components/Navigation.astro";
 import Aside from "../components/Aside.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -55,12 +56,13 @@ import Aside from "../components/Aside.astro";
     <Navigation />
 
     <div
-      class="w-fit mx-auto grid items-start gap-4"
-      style="grid-template-columns: max-content 1fr;"
+      class="w-fit px-2 mx-auto md:grid md:items-start md:gap-4 md:grid-cols-[max-content_1fr]"
     >
       <Aside />
       <main class="pb-8">
         <slot />
+
+        <Footer />
       </main>
     </div>
   </body>
