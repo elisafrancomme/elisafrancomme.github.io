@@ -1,0 +1,57 @@
+---
+layout: ../layouts/Layout.astro
+title: Thérapeuthe Corps Esprit
+---
+
+Tout d'abord, je vous offre un espace d'accueil et de non jugement, où
+vous pourrez déposer tout ce dont vous avez besoin de déposer.
+
+Ensuite, je peux autant vous accompagner à propos d'angoisses, de fatigue,
+de stress, de maladies physiques, d'addictions de toute sorte (nourriture,
+cigarette etc.), de deuils à faire, d'envies suicidaires, de votre posture
+d'homme ou de femme, sur des sujets comme la sexualité, ou l'atteinte
+d'objectifs précis, libérer votre rapport à l'argent etc.
+
+Tout le travail va être de révéler votre inconscient. Qu'est ce qui se
+joue derrière mon stress, ma maladie, mon blocage, mon excès ? Pourquoi je
+ne guéris pas ? Ou pourquoi cette même situation se répète ? Qu'est ce qui
+se joue derrière ? Que se cache t il derrière ma dépression, ma relation
+aux autres, mon symptôme, mon mal être, mon rapport à l'argent etc. ?
+
+Ma manière de travailler fait très peu intervenir le mental, nous ne
+sommes pas totalement en psychothérapie, cela va beaucoup plus loin que
+ça. On se plonge dans la sagesse sensorielle. Notre premier langage
+n'était pas le verbe. Bébé on ne parle pas, le langage va passer par le
+corps, par des attitudes, par la somatisation (les maladies), le cri etc.
+D'abord nous sommes tout en sensation, pas en verbe.
+
+Une fois qu'on a révélé l'inconscient (souvent des émotions bloquées, des
+histoires mal digérées, des dénis etc.) on peut libérer les
+énergies/émotions/croyances bloquées. On peut modifier les croyances et
+donc changer sa réalité (donc sa vie, son état de santé, notre état
+émotionnel et mental).
+
+Une fois l'inconscient révélé, et l'émotionnel traversé, nous sommes
+soulagés.
+
+> Pour tout ce qui concerne le lien corps-esprit, maladie-émotions (même les maladies génétiques),
+> n'hésitez pas à aller dans ma bibliothèque.
+> Vous aurez des ouvrages scientifiques accessibles aux plux curieux d'entre vous.
+
+Techniques employées :
+
+- la kinésiologie
+- la psychogénéalogie
+- le décodage émotionnel des maladies
+- la clairvoyance
+- le voyage intérieur
+- le shadow work
+- l'astrologie
+- les tarots et oracles
+
+(en savoir plus : Ma boîte à outils)
+
+Tarif: **70€/ 1h30**
+
+> Sachez que de plus en plus de mutuelles remboursent les séances de kinésiologie.
+> Profitez en.
