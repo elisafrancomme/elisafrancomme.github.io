@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import branch from "../assets/branch.png";
+
+const { class: className } = Astro.props;
+---
+
+<Image
+  src={branch}
+  class={`${className}`}
+  alt="Branche décorative de cerisier"
+/>
