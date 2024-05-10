@@ -5,7 +5,19 @@ export default {
     extend: {
       fontFamily: { invited: ["YoureInvited"] },
       colors: {
-        pink: "#B76781",
+        accent: {
+          50: "#fdf2f7",
+          100: "#fbe8f2",
+          200: "#fad0e6",
+          300: "#f7aad0",
+          400: "#f175b0",
+          500: "#e84c91",
+          600: "#d62c6f",
+          700: "#b21b52",
+          800: "#9a1a47",
+          900: "#801b3f",
+          950: "#4e0920",
+        },
         brand: {
           50: "#fbf7f5",
           100: "#f6edea",
@@ -19,28 +31,15 @@ export default {
           900: "#644338",
           950: "#35211a",
         },
-        accent: {
-          50: "#f2f8f9",
-          100: "#ddedf0",
-          200: "#bedae3",
-          300: "#92bfce",
-          400: "#67a2b7",
-          500: "#428098",
-          600: "#3a6a80",
-          700: "#34576a",
-          800: "#314a59",
-          900: "#2c404d",
-          950: "#1a2833",
-        },
       },
       typography: ({ theme }) => ({
         brand: {
           css: {
             "--tw-prose-body": theme("colors.black"),
-            "--tw-prose-quotes": theme("colors.brand[950]"),
-            "--tw-prose-quote-borders": theme("colors.brand[600]"),
-            "--tw-prose-bullets": theme("colors.brand[600]"),
-            "--tw-prose-headings": theme("colors.pink"),
+            "--tw-prose-quotes": theme("colors.accent[950]"),
+            "--tw-prose-quote-borders": theme("colors.accent[700]"),
+            "--tw-prose-bullets": theme("colors.accent[600]"),
+            "--tw-prose-headings": theme("colors.accent[700]"),
           },
         },
       }),
