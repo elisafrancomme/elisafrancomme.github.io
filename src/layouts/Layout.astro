@@ -9,7 +9,7 @@ import "../styles/tailwind.css";
 import Header from "../components/Header.astro";
 import Navigation from "../components/Navigation.astro";
 import Aside from "../components/Aside.astro";
-import Footer from "../components/Footer.astro";
+import HeaderMobile from "../components/HeaderMobile.astro";
 import Branch from "../components/Branch.astro";
 ---
 
@@ -50,17 +50,16 @@ import Branch from "../components/Branch.astro";
 
     <Header />
     <Navigation />
+    <HeaderMobile />
 
     <div
-      class="w-fit px-2 mx-auto md:grid md:items-start md:gap-8 md:grid-cols-[max-content_1fr]"
+      class="w-fit mt-12 px-2 mx-auto md:grid md:items-start md:gap-8 md:grid-cols-[max-content_1fr]"
     >
       <Aside />
       <main class="pb-8">
         <article class="prose text-justify prose-brand">
           <slot />
         </article>
-
-        <Footer />
       </main>
     </div>
   </body>
