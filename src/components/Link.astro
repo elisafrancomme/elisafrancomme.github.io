@@ -3,14 +3,15 @@ interface Props {
   href: string;
   class?: string;
   target?: string;
+  active?: boolean;
 }
 
-const { href, target, class: className } = Astro.props;
+const { href, target, class: className = "", active = false } = Astro.props;
 ---
 
 <a
   href={href}
   target={target}
-  class={`transition-all hover:text-accent-800 hover:scale-105 focus-visible:outline outline-brand-500 ${className}`}
+  class={`transition-all hover:text-accent-800 hover:scale-105 focus-visible:outline outline-brand-500 ${className} ${active ? "text-accent-800" : ""}`}
   ><slot /></a
 >

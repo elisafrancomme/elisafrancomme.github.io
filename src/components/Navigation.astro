@@ -1,12 +1,23 @@
 ---
 import Link from "./Link.astro";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // removes the first "/"
 ---
 
 <nav
   class="flex flex-col mt-4 md:flex-row bg-brand-50 py-4 px-2 items-center gap-4 justify-center md:sticky md:top-0"
 >
-  <Link href="/proposition#page-title">Ma proposition</Link>
-  <Link href="/parcours#page-title">Mon parcours</Link>
-  <Link href="/boite-a-outils#page-title">Ma boîte à outils</Link>
-  <Link href="/bibliotheque#page-title">Ma bibliothèque & vidéothèque</Link>
+  <Link active={currentPath === "proposition"} href="/proposition#page-title"
+    >Ma proposition</Link
+  >
+  <Link active={currentPath === "parcours"} href="/parcours#page-title"
+    >Mon parcours</Link
+  >
+  <Link
+    active={currentPath === "boite-a-outils"}
+    href="/boite-a-outils#page-title">Ma boîte à outils</Link
+  >
+  <Link active={currentPath === "bibliotheque"} href="/bibliotheque#page-title"
+    >Ma bibliothèque & vidéothèque</Link
+  >
 </nav>
