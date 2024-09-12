@@ -85,5 +85,35 @@ import Branch from "../components/Branch.astro";
         </article>
       </main>
     </div>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      goog_snippet_vars = function () {
+        var w = window;
+        w.google_conversion_id = 761366694;
+        w.google_conversion_label = "vjHGCOq15cgZEKaRhusC";
+        w.google_conversion_value = 13.0;
+        w.google_conversion_currency = "USD";
+        w.google_remarketing_only = false;
+      };
+      // NE PAS MODIFIER LE CODE CI-DESSOUS.
+      goog_report_conversion = function (url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        var conv_handler = window["google_trackConversion"];
+        if (typeof conv_handler == "function") {
+          conv_handler(opt);
+        }
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="//www.googleadservices.com/pagead/conversion_async.js"></script>
   </body>
 </html>
