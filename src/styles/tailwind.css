@@ -23,16 +23,22 @@
   }
 
   .rlb-badge {
-    background: none !important;
     animation: none !important;
-    max-width: 240px;
+    width: 100%;
+    max-width: none !important;
     min-height: 88px;
+    @apply !bg-brand-200 md:!bg-transparent shadow md:shadow-none;
   }
 
   .rlb-badge .rlb-rdv {
     --tw-bg-opacity: 1;
     background-color: rgb(178 27 82 / var(--tw-bg-opacity)) /* #b21b52 */ !important;
     border-radius: 0.25rem;
-    @apply rounded transition-all hover:!bg-accent-600 hover:scale-105;
+    @apply !m-0 w-full rounded transition-all hover:!bg-accent-600 hover:scale-105 !text-base;
+  }
+
+  .rlb-badge .rlb-link .stars {
+    font-family: "Quicksand" !important;
+    @apply !text-black !font-normal !text-base;
   }
 }
