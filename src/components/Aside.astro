@@ -9,14 +9,41 @@ import Link from "./Link.astro";
 <aside
   class="hidden md:flex flex-col gap-4 mb-12 justify-center sticky top-0 md:top-24"
 >
-  <a
-    onclick="goog_report_conversion('https://www.resalib.fr/praticien/56645-elisa-francomme-kinesiologue-albi#newrdvmodal')"
+  <!-- RESALIB BADGE -->
+  <script>
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://www.resalib.fr/script/56645/badge.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "resalib-sdk");
+  </script>
+  <div class="rlb-badge">
+    <a
+      target="_blank"
+      class="rlb-rdv"
+      onclick="goog_report_conversion('https://www.resalib.fr/praticien/56645-elisa-francomme-kinesiologue-albi#newrdvmodal')"
+      href="https://www.resalib.fr/praticien/56645-therapeute-corps-esprit-elisa-francomme-therapeute-psychocorporel-albi"
+    >
+      <div
+        class="flex items-center gap-2 bg-accent-700 text-white font-bold px-3 py-2"
+      >
+        <IconCalendarDays class="size-6" />
+        Prendre rendez-vous
+      </div>
+    </a>
+  </div>
+  <!-- RESALIB BADGE -->
+  <!-- <a
     href="https://www.resalib.fr/praticien/56645-elisa-francomme-kinesiologue-albi#newrdvmodal"
     class="flex items-center gap-2 bg-accent-700 text-white font-bold px-3 py-2 rounded hover:bg-accent-600 transition-all hover:scale-105"
   >
     <IconCalendarDays class="size-6" />
     Réserver une séance
-  </a>
+  </a> -->
   <Link
     href="https://maps.app.goo.gl/KC2ZVWZw9pDo8Ert5"
     target="_blank"

@@ -21,4 +21,18 @@
   html {
     font-family: "Quicksand";
   }
+
+  .rlb-badge {
+    background: none !important;
+    animation: none !important;
+    max-width: 240px;
+    min-height: 88px;
+  }
+
+  .rlb-badge .rlb-rdv {
+    --tw-bg-opacity: 1;
+    background-color: rgb(178 27 82 / var(--tw-bg-opacity)) /* #b21b52 */ !important;
+    border-radius: 0.25rem;
+    @apply rounded transition-all hover:!bg-accent-600 hover:scale-105;
+  }
 }
