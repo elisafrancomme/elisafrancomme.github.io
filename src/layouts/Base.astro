@@ -1,0 +1,99 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+import "../styles/tailwind.css";
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w: any, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0] as any,
+          j = d.createElement(s) as any,
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WL7G94ND");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Thérapeute Corps Esprit, Elisa Francomme"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      href="/fonts/YoureInvited.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Quicksand-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | Elisa Francomme</title>
+  </head>
+  <body
+    class="bg-gradient-to-b from-brand-200 to-brand-100 min-h-lvh text-black"
+  >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WL7G94ND"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+
+    <slot />
+
+    <script is:inline type="text/javascript">
+      /* <![CDATA[ */
+      goog_snippet_vars = function () {
+        var w = window;
+        w.google_conversion_id = 761366694;
+        w.google_conversion_label = "vjHGCOq15cgZEKaRhusC";
+        w.google_conversion_value = 13.0;
+        w.google_conversion_currency = "USD";
+        w.google_remarketing_only = false;
+      };
+      // NE PAS MODIFIER LE CODE CI-DESSOUS.
+      goog_report_conversion = function (url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        var conv_handler = window["google_trackConversion"];
+        if (typeof conv_handler == "function") {
+          conv_handler(opt);
+        }
+      };
+      /* ]]> */
+    </script>
+    <script
+      is:inline
+      async="true"
+      src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+  </body>
+</html>
