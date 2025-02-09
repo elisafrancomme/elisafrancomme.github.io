@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 
 import mdx from "@astrojs/mdx";
 
@@ -7,9 +7,10 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   site: "https://elisafrancomme.github.io",
   devToolbar: {
-    enabled: false
+    enabled: false,
   },
-  integrations: [tailwind({
-    applyBaseStyles: false
-  }), mdx()]
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [mdx()],
 });
