@@ -1,6 +1,24 @@
-@tailwind base;
-@tailwind utilities;
-@tailwind components;
+@import 'tailwindcss';
+
+@config '../../tailwind.config.mjs';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @layer base {
   @font-face {
@@ -27,18 +45,18 @@
     width: 100%;
     max-width: none !important;
     min-height: 88px;
-    @apply !bg-brand-200 md:!bg-transparent shadow md:shadow-none;
+    @apply bg-brand-200! md:bg-transparent! shadow-sm md:shadow-none;
   }
 
   .rlb-badge .rlb-rdv {
     --tw-bg-opacity: 1;
     background-color: rgb(178 27 82 / var(--tw-bg-opacity)) /* #b21b52 */ !important;
     border-radius: 0.25rem;
-    @apply !m-0 w-full rounded transition-all hover:!bg-accent-600 hover:scale-105 !text-base;
+    @apply m-0! w-full rounded-sm transition-all hover:bg-accent-600! hover:scale-105 text-base!;
   }
 
   .rlb-badge .rlb-link .stars {
     font-family: "Quicksand" !important;
-    @apply !text-black !font-normal !text-base;
+    @apply text-black! font-normal! text-base!;
   }
 }
