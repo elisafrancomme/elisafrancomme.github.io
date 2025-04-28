@@ -24,6 +24,14 @@ import "../styles/tailwind.css";
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-WL7G94ND");
     </script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-761366694");
+    </script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -49,9 +57,7 @@ import "../styles/tailwind.css";
     <meta name="generator" content={Astro.generator} />
     <title>{title} | Elisa Francomme</title>
   </head>
-  <body
-    class="bg-linear-to-b from-brand-200 to-brand-100 min-h-lvh text-black"
-  >
+  <body class="bg-linear-to-b from-brand-200 to-brand-100 min-h-lvh text-black">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
